@@ -1,0 +1,117 @@
+h1{
+    color: #006ec9;
+    text-align: right;
+    vertical-align: bottom;
+    padding-top: 80px;
+    margin-right: 5px;
+}
+
+body{
+    background-image: url("../images/sprinkles.png");
+    width: 900px;
+    margin:auto;
+}
+
+header{
+    grid-area: header;
+
+
+}
+
+
+#wrapper > header{
+    background-image: url("../images/orange_bleue.png");
+    background-repeat: no-repeat;
+    border-bottom: 1px #006ec9 solid;
+    height: 150px;
+}
+
+
+
+#a1{
+    grid-area: a1;
+
+}
+
+#a2{
+    grid-area: a2;
+}
+
+#a3{
+    grid-area: a3;
+}
+
+
+#wrapper{
+    border : 1px #006ec9 solid;
+    display:grid;
+    grid-template-areas:'header header header '
+                        'nav    a1     a1    '
+                        'nav    a2     a2     '
+                        'nav    a3     a3     '
+                        'footer footer footer ';
+    background-color: #FCFAE1;
+    margin:30px;
+}
+
+footer{
+    grid-area: footer;
+    text-align:center;
+    background-color: #006ec9;
+}
+
+#a2 img{
+    float:right;
+    width : 150px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+aside{
+    display: inline;
+    position:fixed;
+    top: 80%;
+    left: 0%;
+    width: 150px;
+    background-color: red;
+    font-size: 9px;
+    border-radius: 10px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+aside img{
+    width: 20px;
+    height: 20px;
+}
+
+aside h2{
+    display:inline-block;
+    text-align: right;
+}
+
+nav{
+    border-right: 1px #006ec9 dashed;
+    text-align: left;
+
+}
+
+a{
+    color: black;
+    text-align: left;
+    margin:10px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+ul{ padding: 0px;
+    list-style: none;
+    text-align: left;
+}
+
+
